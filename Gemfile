@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
-
+gem 'pg'
 gem 'rails', '~> 5.0', '>= 5.0.0.1'
-gem 'pg', '~> 0.15'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
@@ -36,3 +35,7 @@ gem 'kaminari', '~> 0.17.0'
 gem 'rails_12factor'
 gem 'honeybadger', '~> 2.0'
 gem 'newrelic_rpm', '~> 3.15', '>= 3.15.0.314'
+
+group :production do
+  gem 'pg'
+end

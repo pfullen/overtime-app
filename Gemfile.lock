@@ -272,7 +272,7 @@ DEPENDENCIES
   jquery-rails
   kaminari (~> 0.17.0)
   newrelic_rpm (~> 3.15, >= 3.15.0.314)
-  pg (~> 0.15)
+  pg
   puma (~> 3.4)
   pundit (~> 1.1)
   rails (~> 5.0, >= 5.0.0.1)
