@@ -6,9 +6,17 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body class = "container">
+<body>
+<div class = "container">
+	<div clss = "row" >
+		<div class = "col-md-12"
  <%= render 'shared/nav' %>
 <%= yield %>
 
+		</div>
+	</div>
+</div>
+
+<%= render 'shared/alerts' %>
 </body>
 </html>
