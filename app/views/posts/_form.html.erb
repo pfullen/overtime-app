@@ -6,15 +6,21 @@
       <% end %>
     <% end %>
   
-    <div class="form-group">
+    <div class="form-group" data-provide="datepicker">
       <%= f.label :date, class: "col-sm-2 control-label" %> 
-      <%= f.date_select :date, class: "form-control" %>  
+      <%= f.date_field :date, class: "form-control" %>  
     </div>
   
     <div class="form-group">
       <%= f.label :rationale, class: "col-sm-2 control-label" %>  
       <%= f.text_area :rationale, class: "form-control" %>  
     </div>
+
+     <div class="form-group">
+      <%= f.label :overtime_request, class: "col-sm-2 control-label" %>  
+      <%= f.text_area :overtime_request, class: "form-control" %>  
+    </div>
+
   
     <%= render partial: 'status', locals: {f: f} if current_user.type == 'AdminUser' %>
     
